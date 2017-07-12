@@ -1,0 +1,18 @@
+{
+  "name": "pnrm-dl",
+  "version": "1.0.0",
+  "description": "Simple photo downloader for Panoramio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PK",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "request": "^2.81.0",
+    "url": "^0.11.0"
+  }
+}
