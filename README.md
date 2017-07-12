@@ -6,4 +6,5 @@ NodeJS is required to run the script
 As simple as:
 
 $ npm install
+
 $ node -i https://ssl.panoramio.com/user/%userid% -o /path/to/save/album
