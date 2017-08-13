@@ -83,12 +83,10 @@ let loadImg = (pageUrl, folder) => {
             }
             
             let fullImgName = `${bigImgName}_${pageUrl.split('/').pop()}.${bigImgUrl.split('.').pop()}`;
-            let fullImgPath = path.join(folder, fullImgName);
 
             request.head(bigImgUrl, (err, res, body) => {
-                let contentLength = res.headers['content-length'];
                 try {
-                    request(bigImgUrl).pipe(fs.createWriteStream(fullImgPath)).on('close', () => 
+                    request(bigImgUrl).pipe(fs.createWriteStream(path.join(folder, fullImgName))).on('close', () => 
                         console.log(`(${++counter}) ${fullImgName} in ${(time() - start)} ms`));
                 } catch (e) {
                     console.error(e);

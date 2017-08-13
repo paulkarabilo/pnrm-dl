@@ -7,4 +7,4 @@ As simple as:
 
 $ npm install
 
-$ node index.js -i https://ssl.panoramio.com/user/%userid% -o /path/to/save/album
+$ ./dl -i https://ssl.panoramio.com/user/%userid% -o /path/to/save/album
